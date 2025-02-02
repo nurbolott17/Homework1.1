@@ -17,7 +17,7 @@ a{
     
     background-color: #E1FF8F;
     background-image:url(img/bigstar.png), url(img/star2.svg),url(img/star3.svg),url(img/star5.svg),url(img/star4.svg);
-    background-position: right 0px top 0px, left 63px top 94px, left 156px top 69px, right 455px bottom 225px, right 344px bottom 149px;
+    background-position: 854px, 63px 94px, 156px 69px, 948px 538px, 1013px 568px;
     background-repeat: no-repeat;
     &__content{
     
@@ -189,13 +189,15 @@ a{
 .play{
     
     border-radius: 30px;
-    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    
     
     &__game{
         border-radius: 30px;
         background-color: #fff;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
     }
     &__heading{
         padding-top: 46px;
@@ -208,14 +210,13 @@ a{
         color: rgb(255, 255, 255);
     }
     &__info{
-        grid-column: span 6;
+        
         padding: 48px;
         
     }
-    &__imeg1{
-        grid-column: span 6;
-    }
     
+       
+
     &__name{
         padding-bottom: 24px;
         font-size: 48px;
@@ -235,6 +236,7 @@ a{
         text-align: left;
         color: rgb(32, 32, 39);
     }
+
     &__btn{
         width: 247px;
         height: 66px;
